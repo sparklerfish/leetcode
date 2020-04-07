@@ -19,7 +19,7 @@ function minPathSum(grid) {
         }
     }
     console.log(table[m - 1][n - 1]);
-    return table[m - 1][n -1];
+    return table[m - 1][n - 1];
 }
 
 minPathSum([
