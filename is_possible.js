@@ -2,7 +2,6 @@ function isPossible(a, b, c, d) {
     // Write your code here
     let table = new Array(c - a).fill(new Array(d - b).fill("No"));
 
-    // console.log(table)
     table[0][0] = "Yes";
     for (let i = 0; i < c - a; i++) {
         for (let j = 0; j < d - b; j++) {
