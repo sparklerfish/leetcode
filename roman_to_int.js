@@ -1,4 +1,4 @@
-var romanToInt = function (s) {
+var romanToInt = function(s) {
     const values = {
         "I": 1,
         "V": 5,
@@ -13,7 +13,7 @@ var romanToInt = function (s) {
 
     for (let i = 0; i < s.length; i++) {
         let char = s[i];
-        let nextChar = s[i + 1]
+        let nextChar = s[i + 1];
         if (values[char] < values[nextChar]) {
             total -= values[char];
         } else {
