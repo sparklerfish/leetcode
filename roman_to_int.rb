@@ -13,9 +13,7 @@ def roman_to_int(s)
 
     (0...s.length).each do |i|
         char = s[i]
-        # puts char
         next_char = s[i + 1]
-        puts values[char]
         if next_char && values[char] < values[next_char]
             total -= values[char]
         else
@@ -23,7 +21,7 @@ def roman_to_int(s)
         end
     end
 
-    puts total
+    total
 end
 
 roman_to_int("VIII")
