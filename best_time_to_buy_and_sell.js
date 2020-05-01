@@ -1,4 +1,5 @@
-var maxProfit = function (prices) {
+
+const maxProfit = prices => {
     let b = Infinity;
     p = new Array(prices.length + 1).fill(0);
 
