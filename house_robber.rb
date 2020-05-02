@@ -17,7 +17,9 @@
 # Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 #   Total amount you can rob = 1 + 3 = 4.
 
-
+    # for each number:
+    # is dp[i - 1] + num or dp[i] bigger?
+    # dp[i + 1] = the bigger one
 # Example 2:
 
 # Input: [2,7,9,3,1]
@@ -31,11 +33,8 @@
 
 def rob(nums)
     money = Array.new(nums.length + 2, 0)
-    # for each number:
-    # is dp[i - 1] + num or dp[i] bigger?
-    # dp[i + 1] = the bigger one
     (2...money.length).each do |i|
-        money[i] = [money[i - 2] + nums[i-2], money[i - 1]].max
+        money[i] = [money[i - 2] + nums[i - 2], money[i - 1]].max
     end
     money.last
 end
