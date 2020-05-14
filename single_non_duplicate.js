@@ -1,7 +1,6 @@
 var singleNonDuplicate = function(nums) {
     let start = 0;
     let end = nums.length - 1;
-
     
     while (start < end) {
         let mid = (start + end) / 2;
